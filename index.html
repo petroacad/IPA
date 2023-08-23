@@ -1,0 +1,75 @@
+<head>
+  <meta charset="utf-8" />
+  <title>أكاديمية البترول الدولية</title>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body dir="rtl" style="text-align:right">
+  <div id="app">
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d"
+    />
+
+    <section id="event-details-container">
+      <h1>أكاديمية البترول الدولية</h1>
+
+      <p><i class="material-icons">calendar_today</i> October 30</p>
+      <p><i class="material-icons">location_city</i> San Francisco</p>
+      <!-- ADD THE RSVP BUTTON HERE -->
+      <button id="startRsvp">تسجيل الدخول</button>
+    </section>
+
+    <hr />
+
+    <section id="firebaseui-auth-container"></section>
+
+    <section id="description-container">
+      <h2>ماذا سنفعل في هذا اللقاء ؟</h2>
+      <p>سوف نناقش التفاصيل الصغيرة والعوائق التي واجهت المتدربين في الدورة التدريبية ، سنكون سعداء جداً بانضمامك إلينا ، أهلاً ومرحباً بك!!</p>
+    </section>
+
+    
+      <h2>المناقشة</h2>
+    <form id="leave-message">
+<footer>
+    <label for="message">اكتب تعليق : </label>
+    <textarea style="width:90%; position: center ;margin:10px" type="text" id="message"></textarea>
+    <button type="submit">
+      <i class="material-icons">send</i>
+      <span>إرسال</span>
+    </button>
+</footer>
+  </form>
+  <section>
+    <section id="guestbook-container" style="text-align:center">
+      <p id="number-attending"></p>
+      <h2>هل أعجبك المحتوى؟</h2>
+      <button id="rsvp-yes">
+      <i class="material-icons">favorite</i>
+      <span>أحببته</span>
+      </button>
+      <button id="rsvp-no">
+      <i class="material-icons">thumb_up</i>
+      <span>أعجبني</span>
+      </button>
+  <hr></hr>
+  <section id="guestbook">
+
+  </section>
+    </section>
+    </section>
+  </div>
+</body>
