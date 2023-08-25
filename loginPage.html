@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Google Sign In</title>
+ <meta name="google-signin-client_id" content="17251065384-cikm6i804agg3vlcaj3ica1221nch167.apps.googleusercontent.com">
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+ <script>
+  function onSignIn(googleUser) {
+   var profile = googleUser.getBasicProfile();
+   var email = profile.getEmail();
+   var name = profile.getName();
+   console.log('Email: ' + email);
+   console.log('Name: ' + name);
+   // You can use these variables in your Google Apps Script
+  }
+ </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <style>
+      .banner {
+          position: relative;
+          height: 175px;;
+          width: 90%;
+          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_BNqvt75FzffDYtPIVhCb3rkwYU9uAhALpHL2uQvFdADMbEZYMSFe4QIEUdfrL2SktiiXpPI3cjJDgS-fAhC2We7CsiRhLYdr4ywi_kL7nAi_c-2yMBJuXz2b8o30URo3qRJorx75PDTBnQI_g1HbQ_GrCY1nOr3n1pRTtphoTpjJNx_Xqf2HyA/s2400/%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9%20%D9%87%D9%8A%D8%AF%D8%B1-1.jpg");  
+          background-size: cover;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          }
+          .banner:after {
+          content: "";  
+          background-color: rgba(0, 0, 0, 0.2); 
+          position: relative;
+          width: relative;
+          height: relative;
+          }
+          button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px; 
+          background: #4d2557;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+        border-bottom-width: 1px; 
+        border-color: rgb(213, 213, 213); 
+        border-left-width: 1px; 
+        border-radius: 46px; 
+        border-right-width: 1px; 
+        border-top-width: 0px; 
+        border-width: 0px 1px 1px; 
+        cursor: pointer; 
+        margin-bottom: 5px; 
+        margin-left: 5px; 
+        margin-right: 5px; 
+        margin-top: 5px; 
+        margin: 5px; 
+        padding-bottom: 8px; 
+        padding-left: 8px; 
+        padding-right: 8px; 
+        padding-top: 8px; 
+        padding: 8px;
+          }
+          button:hover {
+            background-color: #0dd117; /* Change background color on hover */
+          }
+          
+          body, div, form, input, select, textarea, label { 
+          padding:0;
+          margin: auto;
+          outline: none;
+          font-family: Amiri;
+          font-size: 12px;
+          color: #4d2557;
+          line-height: 22px;
+          font-weight:bold;
+          }
+          h1{
+            color: gold; 
+            text-shadow: 0px 0px 2px #000, 0px 0px 4px #4d2557;
+             -webkit-text-fill-color: gold;
+             font-size: 40px;
+          }
+          section{
+          text-align: right;
+          position: relative;
+          top: auto;
+          left: auto;
+          height: auto;
+          width:90%;
+          padding: 30px;
+          border-color: #4d2557;
+          border-radius: 6px;
+          background: #fff;
+          box-shadow: 0 0 8px  #4d2557; 
+          }
+          footer {
+   background-color: #4d2557;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+
+footer p {
+   margin: 0;
+   color: #fff;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.social-icons a {
+   color: #fff;
+   font-size: 20px;
+   margin: 0 10px;
+}
+
+.social-icons a:hover {
+   color: #ccc;
+}
+
+.site-map ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.site-map li {
+   margin: 0 10px;
+   padding: 0;
+}
+.site-map li:hover {
+  background-color: #4d2557;
+}
+.site-map a {
+   color: #4d2557;
+   text-decoration: none;
+   font-size: 13px;
+}
+
+.site-map a:hover {
+   color: #fff;
+   background-color: #4d2557;
+}
+
+.site-map ul li:before {
+   content: "";
+}
+
+.site-map ul li:first-child:before {
+   display: none;
+}
+
+footer .site-map {
+   background-color: gold;
+   margin-top: 20px;
+   text-align: center;
+}
+
+footer .site-map ul {
+   flex-direction: row;
+}
+.logo {
+  float: right;
+  margin-left: 10px;
+}
+.contact-button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px; 
+          background: gold;
+          font-size: 16px;
+          font-weight: bold;
+          color: #4d2557;
+          cursor: pointer;
+        border-bottom-width: 1px; 
+        border-color: rgb(213, 213, 213); 
+        border-left-width: 1px; 
+        border-radius: 46px; 
+        border-right-width: 1px; 
+        border-top-width: 0px; 
+        border-width: 0px 1px 1px; 
+         
+        cursor: pointer; 
+        margin-bottom: 5px; 
+        margin-left: 5px; 
+        margin-right: 5px; 
+        margin-top: 5px; 
+        margin: 5px; 
+        padding-bottom: 8px; 
+        padding-left: 8px; 
+        padding-right: 8px; 
+        padding-top: 8px; 
+        padding: 8px;
+          }
+          .videoControl{
+          width: 150px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px; 
+          background: #4d2557;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          text-align: center;
+        border-bottom-width: 1px; 
+        border-color: rgb(213, 213, 213); 
+        border-left-width: 1px; 
+        border-radius: 46px; 
+        border-right-width: 1px; 
+        border-top-width: 0px; 
+        border-width: 0px 1px 1px; 
+        display: inline-block;
+        cursor: pointer; 
+        margin-bottom: 5px; 
+        margin-left: 5px; 
+        margin-right: 5px; 
+        margin-top: 5px; 
+        margin: 5px; 
+        padding-bottom: 8px; 
+        padding-left: 8px; 
+        padding-right: 8px; 
+        padding-top: 8px; 
+        padding: 8px;
+          }
+    </style>
+</head>
+<body dir="rtl">
+   <fieldset class="element-group" style="text-align: center;">
+          <legend> <h1>تسجيل الدخول للمتابعة</h1></legend>
+          <div class="banner"></div>
+  <h2>للوصول إلى صفحة الويب المطلوبة، يجب أن تكون قد قمت بتسجيل الدخول باستخدام حساب جوجل الخاص بك. يرجى اتباع الخطوات التالية لتسجيل الدخول:</h2>
+  <ol style="text-align: right;">
+    <li>انقر على الزر "تسجيل الدخول" الموجود أسفل هذه الرسالة.</li>
+    <li>ستتم إعادة توجيهك إلى صفحة تسجيل الدخول إلى جوجل.</li>
+    <li>قم بإدخال عنوان بريدك الإلكتروني وكلمة مرور حساب جوجل الخاص بك.</li>
+    <li>انقر على زر "تسجيل الدخول" للموافقة على تسجيل الدخول باستخدام حساب جوجل الخاص بك.</li>
+    <li>بعد تسجيل الدخول بنجاح، ستتم إعادة توجيهك تلقائيًا إلى صفحة الويب التي ترغب في الوصول إليها.</li>
+  </ol>
+  <h2>يرجى ملاحظة أنه سيتم تخزين معلومات حساب جوجل الخاصة بك بشكل آمن وسري، ولن يتم مشاركتها مع أي جهة خارجية.</h2>
+  <h2>إذا كنت تعاني من أية مشاكل في عملية تسجيل الدخول أو تحتاج إلى مساعدة إضافية، يرجى الاتصال بفريق الدعم الفني لدينا.</h2>
+  <h2>نشكرك على تعاونك ونتطلع إلى خدمتك بشكل مستمر.</h2>
+         <div style="text-align: center;">
+          
+  <a href="#" shape="pill" type="standard" class="g-signin2" data-onsuccess="onSignIn" rel="nofollow" relf="noreferrer" style="text-align: center;" target="new_tab"> <input aba02="" onmouseout="this.style.backgroundColor='#4d2557';this.style.color='white';" onmouseover="this.style.backgroundColor='gold';this.style.color='black';" style="color: gold; background-color: #4d2557; border-bottom-width: 1px; border-color: rgb(213, 213, 213); border-left-width: 1px; border-radius: 46px; border-right-width: 1px; border-top-width: 0px; border-width: 0px 1px 1px; cursor: pointer; margin: 5px; padding: 8px;" type="button" value="تسجيل الدخول" /></a></div>
+        </fieldset>
+</body>
+<footer style="width:100%;">
+    
+    <div style="text-align: center;">
+      <h2 for="btn" style="font-size:20px;color:white;">مســـــــاعدة  ؟؟</h2>
+      <a href="https://wa.me/message/3ZRVFYGNS3SAL1" rel="nofollow" relf="noreferrer" style="text-align: center;" target="new_tab">
+      <button class="contact-button fab fa-whatsapp" id="btn" type="button" >تواصل  </button></a>
+      <a href="https://t.me/petroacad" rel="nofollow" relf="noreferrer" style="text-align: center;" target="new_tab">
+        <button class="contact-button fab fa-telegram" id="btn2" type="button" >انضمام  </button></a>
+          <br/>
+      
+    </div>
+          <hr style="background-color: #fff;">
+     <div class="container">
+       <a href="https://www.alhuqebi.com/home">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-YEaJc6FxYzlOaMd11LUzrFfK1JchnBbfZhwHTgcTN-_VBz9QJkRionpyAxEDdQrlEUJ4PDEDeNCMaYARRZmJi4Ww3O1yBnr0abT1zMBhj3DT8eFirxSnbT92R2XJcpCTennVmiIe7rRRhC6O0PLHJ_BDoe-UN73NybwQeB5y_ILNlVvn5TU2H_5z/s1445/my%20photo.png" alt="أكاديمية البترول الدولية" class="logo" width="50px"></a><p> فريق أكاديمية البترول الدولية<br />تم تصميم الموقع بواسطة المهندس عبدالله الحُقِّبي || الرئيس التنفيذي للأكاديمية</p>
+       <hr style="background-color: #fff;"><p>جميع الحقوق محفوظة لأكاديمية البترول الدولية &copy; 2023</p>
+        
+        <div dir="rtl" class="site-map">
+           <ul>
+              <li><a href="https://www.alhuqebi.com/home">الصفحة الرئيسية</a></li>
+              <li><a href="https://www.alhuqebi.com/help/team">عن الشركة</a></li>
+              <li><a href="https://www.alhuqebi.com/services">خدماتنا</a></li>
+              <li><a href="https://t.me/petroacad">اتصل بنا</a></li>
+           </ul>
+        </div>
+     </div>
+     <div class="social-icons">
+           <a href="mailto:contac@alhuqebi.com"><i class="far fa-envelope"></i></a>
+           <a href="https://wa.me/message/3ZRVFYGNS3SAL1 " target="_blank"><i class="fab fa-whatsapp"></i></a>
+           <a href="https://www.facebook.com/interpetroacad" target="_blank"><i class="fab fa-facebook"></i></a>
+           <a href="https://www.instagram.com/petroacad" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/petroacad" target="_blank"><i class="fab fa-linkedin"></i></a>
+           <a href="https://www.twitter.com/petroacad" target="_blank"><i class="fab fa-twitter"></i></a>
+           <a href="https://t.me/petroacademy" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+  </footer>
+</html> 
